@@ -9,20 +9,20 @@ public class PR2063 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
-		String num [] = null ;
 		if (N % 2 != 0) {
-			num = br.readLine().split(" ");
-			for(int i = 0; i < num.length; i++) {
-				int tmp = Integer.parseInt(num[i]);
-				if(tmp < Integer.parseInt(num[i])) {
-					
-				}
-				else if(tmp == Integer.parseInt(num[i])) {
-					num [i] = num [i];
-				}
-			
+			String num[] = br.readLine().split(" ");
+			for(int i = 0 ; i < num.length; i++) {
 			}
-			System.out.println(num[N/2]);
+			for (int i = 0; i < num.length; i++) {
+				for (int j = i + 1; j < num.length; j++) {
+					if (Integer.parseInt(num[i]) > Integer.parseInt(num[j])) {
+						String tmp = num[i];
+						num[i] = num[j];
+						num[j] =tmp;
+					}
+				}
+			}
+			System.out.println(num[N / 2]);
 		}
 
 	}
