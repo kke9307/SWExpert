@@ -35,7 +35,7 @@ class Array_Baby_Gin_Game {
 		}
 	}
 
-	static void CountingSort(int arr[]) {
+	static void CountingSort(int arr[]) {// Counting Sort 제한된 수의 정렬을 구할땐 가장 효율적!! 대표적으로 Suffix Array 를 얻을때!
 
 		int[] counts = new int[getMax(arr) + 1]; // 가장 큰 값 +1 로 배열 선언
 		for (int i = 0; i < arr.length; i++) { // 1단계 원소들의 개수 별로 저장
