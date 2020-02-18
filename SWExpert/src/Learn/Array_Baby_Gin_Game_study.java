@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-class Array_Baby_Gin_Game {
+public class Array_Baby_Gin_Game_study {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String tmp[] = br.readLine().split(" ");
